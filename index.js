@@ -9,7 +9,7 @@ const sendAMessage = (data, callback) => {
     console.log(data, "input data");
     client.messages
     .create({
-       body: "The amount " + data.amount + " is going to be " + data.action + "  from the address " + data.member + " Please provide this OTP to proceed " + data.otp,
+       body: "The amount  " + data.amount + " is going to be " + data.action + "  from the address " + data.member + " Please provide this OTP to proceed " + data.otp,
        from: '+12055962414',
        to: data.to
      })
